@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-md-10 col-md-offset-1">
+   <p style="text-align: end;"><span>Total of {{this.employeeList.total}} Employees</span></p>
+
+  <div class="col-md-3" *ngFor="let employeee of this.employeeList.data "  >
+    <div class="card card_customCSS" rooterLinkActive="active" [routerLink]="['/employeeDetails',employeee.id]">
+      <img [src]="employeee.avatar" alt="John" >
+      
+      <p><button style="width: 128px;
+        background-color: blue; color: white;">{{employeee.first_name}} {{employeee.last_name}}</button></p>
+    </div>
+  </div>
+  
+  
+  
+
+</div>
+</div>
